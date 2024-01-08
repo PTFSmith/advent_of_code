@@ -3,7 +3,7 @@ import os
 input_url = "PUT URL HERE"
 def get_input():
     file = open("input_file")
-    lines = file.readlines()
+    lines = file.read().splitlines()
     file.close()
     return lines
 
